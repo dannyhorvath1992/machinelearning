@@ -92,7 +92,7 @@ public class WordFrequencie {
 				for (int i = 0; i < words.length; i++) {
 					if(isAlpha(words[i])) {
 						double chance = predict(words[i]);
-						if (chance < 10) {
+						if (chance < 5) {
 							nonEnglish = nonEnglish + " " +words[i] + "\n";
 						}
 					}
